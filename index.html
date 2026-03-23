@@ -87,7 +87,11 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Enzo Romão. Todos os direitos reservados.</p>
+    <p>&copy; <span id="year"></span> Enzo Romão. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
